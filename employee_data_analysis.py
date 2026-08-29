@@ -154,7 +154,7 @@
 
 # # STEP 10: SORTING 
 
-# # Salary ke hisaab se descending sort
+# # Sort salary by descending order
 # print("\nEMPLOYEES SORTED BY SALARY:")
 # print(df.sort_values("Salary", ascending=False)[
 #     ["Employee_Name", "Department", "Salary"]
@@ -178,14 +178,14 @@
 # print("\nCITIES LOWERCASE:")
 # print(df["City"].str.lower().unique())
 
-# # Name mein "Employee" word hai ya nahi
+# # Does the name contain the word 'Employee' or not
 # print("\nNAMES CONTAINING 'Employee':")
 # print(df[df["Employee_Name"].str.contains("Employee")]["Employee_Name"].head(5))
 
 
 # # STEP 12: PIVOT TABLE 
 
-# # Department + City wise average salary — Excel pivot table jaisa!
+# # Department + City wise average salary 
 # print("\nPIVOT TABLE — DEPT x CITY AVERAGE SALARY:")
 # pivot = df.pivot_table(
 #     values="Salary",
@@ -198,7 +198,7 @@
 
 # # STEP 13: PERCENTAGE ANALYSIS
 
-# # Har Performance Category ka percentage
+# # Percentage of every performing category
 # print("\nPERFORMANCE CATEGORY PERCENTAGE:")
 # perf_pct = df["Performance_Category"].value_counts(normalize=True) * 100
 # print(perf_pct.round(1))
