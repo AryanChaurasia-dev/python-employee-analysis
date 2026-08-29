@@ -22,6 +22,7 @@ Python 3.12 · Pandas · NumPy · VS Code
 ## Files
 | File | Description |
 |------|-------------|
-| `pro.py` | Main analysis code |
+| `employee_data_analysis.py` | Main analysis code |
 | `employee_data.xlsx` | Raw dataset |
 | `employee_analysis.xlsx` | Processed output |
+| `excellent_employees.xlsx` | Excellent performers data |
